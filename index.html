@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="curd">
+        <div class="head">
+         <h2>curd</h2>
+<p>  product management system </p>
+        </div>
+     <div class="error" id="errordata"><p></p></div>
+        <div class="inputs">
+          <input type="text" id="title" placeholder="Title">
+          <div class="price">
+            <input  onkeyup="gettotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="gettotal()"  type="number" id="tax"   placeholder="tax">
+            <input onkeyup="gettotal()"  type="number" id="ads"   placeholder="ads">
+            <input  onkeyup="gettotal()" type="number" id="discont" placeholder="discont">
+            <small id ="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+         <button id="submit">create</button>
+        </div>
+
+
+        <div class="outputs">
+            <div class="searchblock">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getseachMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getseachMood(this.id)" id="searchCategory">Search By Category</button>
+                    
+                </div>
+            </div>
+
+            <div id="deleteall">
+
+            </div>
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>tax</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+    
+                <tbody id="tbody">
+                        
+                    
+               
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <h3>created by : Ehab Hamada</h3>
+        <p>phone: 01121909076</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

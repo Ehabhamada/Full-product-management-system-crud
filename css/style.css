@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.curd{
+    width: 80%;
+    margin: 0 auto;
+}
+.head{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0  ;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+
+}
+
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total {
+    background: #E91E63;
+    padding: 7px 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-left: 5px;
+}
+#total::before{
+    content: "Total:  ";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #2196F3;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+button:hover{
+    background: #03A9F4;
+    letter-spacing: 2px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnsearch button{
+width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin:10px 0 ;
+
+}
+
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+#deleteall{
+margin: 20px 0;
+}
+
+.error{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+}
+footer {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top: 2px solid rgb(56, 56, 56);
+    align-items: center;
+    padding: 20px; 
+    box-shadow: 0px 1px 5px 0px #585757;
+}
